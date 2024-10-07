@@ -1,18 +1,20 @@
 package Decorator;
 
-public class Arequipe extends BebidaDecorator{
+import Interface.Bebida;
 
-    public Arequipe(BebidaDecorator arequipe) {
-        super(arequipe);
+public class Arequipe extends BebidaDecorator {
+
+    public Arequipe(Bebida bebida) {
+        super(bebida);
     }
-    
+
     @Override
-    public String getDescripcion(){
+    public String getDescripcion() {
         return getBebida().getDescripcion() + " + arequipe";
     }
 
     @Override
-    public double precio(){
+    public double precio() {
         return getBebida().precio() + 1000;
     }
 }

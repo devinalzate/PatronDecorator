@@ -1,15 +1,16 @@
 package Decorator;
 
+import Interface.Bebida;
+
 public class Mani extends BebidaDecorator {
-    
-    public Mani(BebidaDecorator toppings){
+
+    public Mani(Bebida toppings) {
         super(toppings);
     }
 
-
     @Override
     public String getDescripcion() {
-       return getBebida().getDescripcion() + " + Mani";
+        return getBebida().getDescripcion() + " + Mani";
     }
 
     @Override

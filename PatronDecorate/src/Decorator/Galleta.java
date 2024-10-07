@@ -1,8 +1,10 @@
 package Decorator;
 
-public class Galleta extends BebidaDecorator{
+import Interface.Bebida;
 
-    public Galleta(BebidaDecorator toppings){
+public class Galleta extends BebidaDecorator {
+
+    public Galleta(Bebida toppings) {
         super(toppings);
     }
 

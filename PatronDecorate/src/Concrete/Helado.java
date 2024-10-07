@@ -2,7 +2,7 @@ package Concrete;
 
 import Interface.Bebida;
 
-public class Helado implements Bebida{
+public class Helado implements Bebida {
 
     @Override
     public String getDescripcion() {
@@ -13,5 +13,5 @@ public class Helado implements Bebida{
     public double precio() {
         return 9000;
     }
-    
+
 }

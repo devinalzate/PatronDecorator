@@ -4,7 +4,7 @@ import Interface.*;
 
 public class Malteada implements Bebida {
     @Override
-    public String getDescripcion(){
+    public String getDescripcion() {
         return "Malteada";
     }
 
@@ -12,5 +12,5 @@ public class Malteada implements Bebida {
     public double precio() {
         return 7000.0;
     }
-    
+
 }

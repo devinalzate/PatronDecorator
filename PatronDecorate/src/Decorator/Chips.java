@@ -1,19 +1,21 @@
 package Decorator;
 
-public class Chips extends BebidaDecorator{
+import Interface.Bebida;
 
-    public Chips(BebidaDecorator chips) {
+public class Chips extends BebidaDecorator {
+
+    public Chips(Bebida chips) {
         super(chips);
     }
-    
+
     @Override
-    public String getDescripcion(){
+    public String getDescripcion() {
         return getBebida().getDescripcion() + " + Chips de colores";
     }
 
     @Override
-    public double precio(){
+    public double precio() {
         return getBebida().precio() + 600;
     }
-    
+
 }
