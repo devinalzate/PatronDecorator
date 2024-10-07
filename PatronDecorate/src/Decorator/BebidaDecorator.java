@@ -2,22 +2,16 @@ package Decorator;
 
 import Interface.Bebida;
 
-public class BebidaDecorator implements Bebida{
+public abstract class BebidaDecorator implements Bebida{
     private Bebida bebida;
 
-    
-
-
-    @Override
-    public String getDescripcion() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getDescripcion'");
+    public BebidaDecorator(Bebida bebida) {
+        setBebida(bebida);
     }
-
-    @Override
-    public double precio() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'precio'");
+    public void setBebida(Bebida bebida){
+        this.bebida = bebida;
     }
-    
+    public Bebida getBebida(){
+        return bebida;
+    }
 }
