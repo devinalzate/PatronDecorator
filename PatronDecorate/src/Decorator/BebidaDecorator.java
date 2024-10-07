@@ -5,19 +5,18 @@ import Interface.Bebida;
 public class BebidaDecorator implements Bebida{
     private Bebida bebida;
 
-    
-
+    public BebidaDecorator(Bebida bebida){
+        this.bebida = bebida;
+    }
 
     @Override
     public String getDescripcion() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getDescripcion'");
+        return bebida.getDescripcion();
     }
 
     @Override
     public double precio() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'precio'");
+        return bebida.precio();
     }
     
 }
