@@ -1,8 +1,8 @@
 package Decorator;
 
-public class ChipsDecorator extends BebidaDecorator{
+public class Chips extends BebidaDecorator{
 
-    public ChipsDecorator(BebidaDecorator chips) {
+    public Chips(BebidaDecorator chips) {
         super(chips);
     }
     

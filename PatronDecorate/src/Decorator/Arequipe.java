@@ -1,8 +1,8 @@
 package Decorator;
 
-public class ArequipeDecorator extends BebidaDecorator{
+public class Arequipe extends BebidaDecorator{
 
-    public ArequipeDecorator(BebidaDecorator arequipe) {
+    public Arequipe(BebidaDecorator arequipe) {
         super(arequipe);
     }
     
